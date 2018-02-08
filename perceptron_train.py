@@ -26,7 +26,7 @@ b2 = tf.Variable(tf.random_uniform(shape=[1,1]))
 x = np.random.normal(2,0.1,500)
 x_data = tf.placeholder(shape=[None,1], dtype=tf.float32)
 
-target = 0.75
+target = 0.2
 
 # Activation functions
 
