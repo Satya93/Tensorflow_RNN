@@ -162,6 +162,8 @@ for i in range(generations):
     
 eval_indices = range(0, generations, eval_every)
 
+saver = tf.train.Saver([conv1_weight, conv2_weight, full1_weight, full2_weight])
+saver.save(sess, './cnn_weights')
 # Plot loss over time
 plt.plot(eval_indices, train_loss, 'k-')
 plt.title('Softmax Loss per Generation')
